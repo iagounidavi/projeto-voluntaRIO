@@ -1,0 +1,31 @@
+name: voluntario_app
+description: Aplicativo de Extensao Unidavi.
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Ícones padrão do iOS
+  cupertino_icons: ^1.0.2
+  
+  # Gerenciamento de Estado (Adicionado para o projeto)
+  provider: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+# A CONFIGURAÇÃO MAIS IMPORTANTE ESTÁ AQUI EMBAIXO
+flutter:
+  uses-material-design: true
+
+  # Aqui registramos a pasta de imagens para o aplicativo conseguir ler
+  assets:
+    - assets/images/
