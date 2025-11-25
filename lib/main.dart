@@ -19,12 +19,10 @@ class VoluntaRiosApp extends StatelessWidget {
         ChangeNotifierProvider(create: (ctx) => ProjetosProvider()),
       ],
       child: MaterialApp(
-        // AQUI ESTÁ O SEGREDO DA ABA DO CHROME:
         title: 'VoluntaRIO', 
         
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          // Definindo a cor base como o Verde Unidavi para começar
           primaryColor: const Color(0xFF004D40),
           colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF004D40)),
           useMaterial3: true,
@@ -36,7 +34,6 @@ class VoluntaRiosApp extends StatelessWidget {
             elevation: 2,
           ),
         ),
-        // Rotas
         routes: {
           '/': (ctx) => const LoginScreen(),
           '/home': (ctx) => const TabsScreen(),
