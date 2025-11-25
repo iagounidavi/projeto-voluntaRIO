@@ -7,8 +7,8 @@ class Projeto {
   final String eixo; 
   final int horas;
   final String imagemUrl;
-  final double lat; // Latitude para o mapa
-  final double lng; // Longitude para o mapa
+  final double lat; 
+  final double lng; 
   bool inscrito;
   bool favorito;
 

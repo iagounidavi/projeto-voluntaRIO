@@ -18,12 +18,10 @@ class MapaScreen extends StatelessWidget {
             width: double.infinity,
             height: double.infinity,
             child: ColorFiltered(
-              // CORREÇÃO: Usando withValues(alpha: ...) em vez de withOpacity
               colorFilter: ColorFilter.mode(Colors.white.withValues(alpha: 0.2), BlendMode.lighten),
               child: Image.asset(
                 ImagensSeguras.mapaBackground, 
                 fit: BoxFit.cover,
-                // Se der erro (arquivo não existe), mostra um aviso feio para você saber
                 errorBuilder: (ctx, err, stack) => Container(
                   color: Colors.grey, 
                   child: const Center(child: Text("ERRO: Adicione 'mapa.jpg' na pasta assets/images", textAlign: TextAlign.center))
@@ -51,7 +49,6 @@ class MapaScreen extends StatelessWidget {
 
           ...projetos.map((proj) {
             return Positioned(
-              // Lógica para espalhar os pinos na tela sem sair das bordas
               top: MediaQuery.of(context).size.height * (0.2 + (proj.lat * 0.6)),
               left: MediaQuery.of(context).size.width * (0.1 + (proj.lng * 0.8)),
               child: GestureDetector(

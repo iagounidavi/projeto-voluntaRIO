@@ -5,13 +5,12 @@ class DashboardScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Usamos DefaultTabController para ter duas abas nessa tela
     return DefaultTabController(
       length: 2,
       child: Scaffold(
         appBar: AppBar(
           title: const Text("Gestão da Extensão"),
-          backgroundColor: const Color(0xFF1565C0), // Azul Coordenação
+          backgroundColor: const Color(0xFF1565C0),
           foregroundColor: Colors.white,
           bottom: const TabBar(
             labelColor: Colors.white,
@@ -111,13 +110,12 @@ class _AbaVoluntarios extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Lista fake de alunos
     final alunos = [
       {"nome": "Ana Silva", "curso": "Direito", "status": "Em Campo"},
       {"nome": "João Souza", "curso": "Eng. Civil", "status": "Disponível"},
-      {"nome": "Marcos P.", "curso": "Sistemas", "status": "Em Campo"},
-      {"nome": "Júlia R.", "curso": "Medicina", "status": "Disponível"},
-      {"nome": "Carlos B.", "curso": "Psicologia", "status": "Pendente"},
+      {"nome": "Marcos Paulo", "curso": "Sistemas", "status": "Em Campo"},
+      {"nome": "Júlia Ribeiro", "curso": "Medicina", "status": "Disponível"},
+      {"nome": "Carlos Bauner", "curso": "Psicologia", "status": "Pendente"},
     ];
 
     return ListView.builder(

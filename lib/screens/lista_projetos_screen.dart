@@ -14,7 +14,7 @@ class ListaProjetosScreen extends StatelessWidget {
 
     return Column(
       children: [
-        // PAINEL DE STATUS (Diferencial)
+        // PAINEL DE STATUS 
         Container(
           padding: const EdgeInsets.all(20),
           color: cor.withOpacity(0.1),
@@ -65,7 +65,7 @@ class ListaProjetosScreen extends StatelessWidget {
                           )
                         : IconButton(
                             icon: const Icon(Icons.edit, color: Colors.blue),
-                            onPressed: () {}, // Edição mockada
+                            onPressed: () {}, 
                           ),
                     ),
                   ],

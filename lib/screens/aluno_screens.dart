@@ -9,7 +9,7 @@ class MinhasHorasScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Extrato de Horas"),
-        backgroundColor: const Color(0xFF004D40), // Verde Unidavi
+        backgroundColor: const Color(0xFF004D40), 
         foregroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
@@ -25,7 +25,7 @@ class MinhasHorasScreen extends StatelessWidget {
                   width: 150,
                   height: 150,
                   child: CircularProgressIndicator(
-                    value: 15 / 60, // 25% concluído
+                    value: 15 / 60, 
                     strokeWidth: 12,
                     backgroundColor: Colors.grey.shade300,
                     color: const Color(0xFF004D40),
@@ -49,7 +49,7 @@ class MinhasHorasScreen extends StatelessWidget {
             const SizedBox(height: 10),
             _buildHistoryItem("Mutirão Rio Itajaí-Açu", "30/11/2024", "10h", true),
             _buildHistoryItem("Inclusão Digital Senior", "05/10/2024", "5h", true),
-            _buildHistoryItem("Feira das Profissões", "12/09/2024", "4h", false), // Pendente
+            _buildHistoryItem("Feira das Profissões", "12/09/2024", "4h", false), 
           ],
         ),
       ),

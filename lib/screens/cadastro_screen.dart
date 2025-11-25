@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/projetos_provider.dart';
 import '../models/projeto.dart';
-import '../utils/imagens_seguras.dart'; // Importante!
+import '../utils/imagens_seguras.dart'; 
 
 class CadastroScreen extends StatefulWidget {
   const CadastroScreen({super.key});
@@ -22,7 +22,6 @@ class _CadastroScreenState extends State<CadastroScreen> {
   String _categoriaSelecionada = 'IV. Sustentabilidade';
   double _horasSelecionadas = 10;
   
-  // NOVA VARIÁVEL: Armazena a imagem escolhida
   String _imagemSelecionada = ImagensSeguras.listaUrls[0]; 
 
   final List<String> _categorias = [
@@ -46,8 +45,8 @@ class _CadastroScreenState extends State<CadastroScreen> {
       local: _localController.text,
       eixo: _categoriaSelecionada,
       horas: _horasSelecionadas.toInt(),
-      imagemUrl: _imagemSelecionada, // Usa a imagem escolhida
-      lat: random.nextDouble(), // Posição aleatória no mapa
+      imagemUrl: _imagemSelecionada, 
+      lat: random.nextDouble(),
       lng: random.nextDouble(),
     );
 
@@ -64,7 +63,6 @@ class _CadastroScreenState extends State<CadastroScreen> {
         child: ListView(
           padding: const EdgeInsets.all(16.0),
           children: [
-            // SEÇÃO DE IMAGEM (NOVIDADE)
             const Text("Escolha a Capa do Projeto:", style: TextStyle(fontWeight: FontWeight.bold)),
             const SizedBox(height: 10),
             SizedBox(
@@ -105,7 +103,6 @@ class _CadastroScreenState extends State<CadastroScreen> {
             ),
             const SizedBox(height: 20),
 
-            // Campos de Texto normais...
             TextFormField(
               controller: _tituloController,
               decoration: const InputDecoration(labelText: 'Título', border: OutlineInputBorder()),

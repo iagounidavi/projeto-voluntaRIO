@@ -5,14 +5,11 @@ import '../utils/imagens_seguras.dart';
 class ProjetosProvider with ChangeNotifier {
   bool isAluno = true;
 
-  // Mudança de identidade visual
-  Color get corPrincipal => isAluno ? const Color(0xFF004D40) : const Color(0xFF1565C0); // Verde UNIDAVI vs Azul Coordenação
+  Color get corPrincipal => isAluno ? const Color(0xFF004D40) : const Color(0xFF1565C0); 
   
-  // Mudança de Texto: ONG -> Coordenação
   String get nomePerfil => isAluno ? "Acadêmico UNIDAVI" : "Coordenação de Extensão";
 
   final List<Projeto> _projetos = [
-    // PROJETO 1
     Projeto(
       id: '1',
       titulo: "Mutirão Rio Itajaí-Açu",
@@ -24,7 +21,6 @@ class ProjetosProvider with ChangeNotifier {
       imagemUrl: ImagensSeguras.opcoes['Sustentabilidade']!,
       lat: 0.35, lng: 0.45,
     ),
-    // PROJETO 2
     Projeto(
       id: '2',
       titulo: "História Viva no Museu",
@@ -36,7 +32,6 @@ class ProjetosProvider with ChangeNotifier {
       imagemUrl: ImagensSeguras.opcoes['Cultura e Arte']!,
       lat: 0.52, lng: 0.41,
     ),
-    // PROJETO 3
     Projeto(
       id: '3',
       titulo: "Inclusão Digital Senior",
@@ -48,7 +43,6 @@ class ProjetosProvider with ChangeNotifier {
       imagemUrl: ImagensSeguras.opcoes['Tecnologia']!,
       lat: 0.60, lng: 0.65,
     ),
-    // --- NOVOS PROJETOS RIO DO SUL ---
     Projeto(
       id: '4',
       titulo: "Apoio Defesa Civil RSL",
@@ -56,7 +50,7 @@ class ProjetosProvider with ChangeNotifier {
       data: "10/12 - 09:00",
       local: "Defesa Civil - Jardim América",
       eixo: "III. Cidadania",
-      horas: 30, // Carga horária alta atrai alunos
+      horas: 30, 
       imagemUrl: ImagensSeguras.opcoes['Defesa Civil']!,
       lat: 0.25, lng: 0.70,
     ),

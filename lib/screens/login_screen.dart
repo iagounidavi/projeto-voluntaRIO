@@ -26,7 +26,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final corAtual = _isAluno ? const Color(0xFF004D40) : const Color(0xFF1565C0); // Verde vs Azul
+    final corAtual = _isAluno ? const Color(0xFF004D40) : const Color(0xFF1565C0); 
 
     return Scaffold(
       backgroundColor: corAtual,

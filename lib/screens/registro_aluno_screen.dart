@@ -16,14 +16,13 @@ class _RegistroAlunoScreenState extends State<RegistroAlunoScreen> {
     
     setState(() => _isLoading = true);
     
-    // Simula delay de rede
     await Future.delayed(const Duration(seconds: 2));
 
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text("Conta criada com sucesso! Faça login."), backgroundColor: Colors.green),
       );
-      Navigator.of(context).pop(); // Volta para o login
+      Navigator.of(context).pop();
     }
   }
 
