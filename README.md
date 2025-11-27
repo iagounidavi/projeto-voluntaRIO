@@ -1,9 +1,9 @@
 VoluntaRIO - Extensão Unidavi
 =============================
 
-> _Conectando a academia à comunidade através do impacto social._
+> _Conectando o universidade aos alunos e à comunidade através do impacto social._
 
-O **VoluntaRIO** é uma aplicação móvel desenvolvida como parte da disciplina de **Estudo Dirigido e Extensão** da UNIDAVI. O projeto visa facilitar a gestão e a participação de acadêmicos em projetos sociais em Rio do Sul e no Alto Vale do Itajaí.
+O **VoluntaRIO** é uma aplicação móvel desenvolvida como parte da disciplina de **Desenvolvimento de Plataforma Móveis** da UNIDAVI. O projeto visa facilitar a gestão e a participação de acadêmicos em projetos sociais em Rio do Sul e no Alto Vale do Itajaí.
 
 Propósito
 ---------
@@ -84,4 +84,4 @@ O projeto contempla os seguintes eixos da Unidavi:
 4.  Universidade Solidária
     
 
-**Desenvolvido por:** Acadêmico Iago Artner (1023872)**Instituição:** UNIDAVI - Rio do Sul/SC**Data:** Novembro/2025
+**Desenvolvido por:** Acadêmico Iago Artner (1023872) **Instituição:** UNIDAVI - Rio do Sul/SC **Data:** Novembro/2025
